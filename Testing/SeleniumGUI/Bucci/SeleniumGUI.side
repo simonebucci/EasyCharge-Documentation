@@ -1,0 +1,212 @@
+{
+  "id": "1739772e-a13c-4ca9-9689-59452f2c823d",
+  "version": "2.0",
+  "name": "SeleniumGUI",
+  "url": "https://www.google.it",
+  "tests": [{
+    "id": "89dfede2-b39e-4386-a13e-9446942f163e",
+    "name": "Tesla",
+    "commands": [{
+      "id": "dd4accd6-1e97-4571-adad-c17eaa29e803",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ee8810-e91d-427b-84c7-fff19e458b69",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x1372",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a94c9e2b-e9b8-4b0f-a207-b8ad6dbb9833",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tesla"
+    }, {
+      "id": "9dfa92d8-fadf-4262-812d-d768f366ec65",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9228710e-1eeb-48f5-99da-acb1a105fc0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eKjLze .LC20lb",
+      "targets": [
+        ["css=.eKjLze .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Auto elettriche, energia solare e pulita | Tesla Italia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7485100-14de-4fa0-b808-8a49f34a370b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tds-align--center > li:nth-child(1) .tds-site-nav-item-text",
+      "targets": [
+        ["css=.tds-align--center > li:nth-child(1) .tds-site-nav-item-text", "css:finder"],
+        ["xpath=//header[@id='tds-site-header']/ol/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Model S')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f4ce716-df14-404e-8c89-73f5ee4e2c34",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ordina ora",
+      "targets": [
+        ["linkText=Ordina ora", "linkText"],
+        ["css=.tcl-badges__button > .tds-btn", "css:finder"],
+        ["xpath=//section[@id='tesla-hero-3063']/div[2]/div/section/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/it_it/models/design')]", "xpath:href"],
+        ["xpath=//section/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ordina ora')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fe944e8-600d-4ee0-a92a-b2b32f47aa75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group--child-container:nth-child(2) .trim-title-container",
+      "targets": [
+        ["css=.group--child-container:nth-child(2) .trim-title-container", "css:finder"],
+        ["xpath=//main[@id='main-content']/section/div[2]/div/div/div/div/div[3]/fieldset/div[2]/div[2]/div/div/div/label/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69767eae-ff93-4720-8a81-896ad5664d04",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(100,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21af2558-0fcb-4a35-b466-41dec441942e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#Model_S_Nero_Pastello > image",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "29f0e271-6d13-4ca7-a7cc-77684855f5c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Model_S_Nero_Pastello > image",
+      "targets": [
+        ["css=#Model_S_Nero_Pastello > image", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e015f320-e894-4396-a34e-cca65d46e041",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Model_S_Cerchi_Arachnid\\ 21\\\" > image",
+      "targets": [
+        ["css=#Model_S_Cerchi_Arachnid\\ 21\\\" > image", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4067f44e-689d-42ec-9ec5-7591034fe710",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(100,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "365e5b55-8cb2-4ed4-a444-4b4afe16bb01",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(100,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f88908cc-eb4e-4ac8-8c85-f5c0ad7fa1db",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(100,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ab63763-d7e5-4169-8fed-baba356397ce",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.tds-flex:nth-child(10) > div > .tds-btn",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "4cb0c9e5-74ed-484e-8daf-b26544e62bd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tds-flex:nth-child(10) > div > .tds-btn",
+      "targets": [
+        ["css=.tds-flex:nth-child(10) > div > .tds-btn", "css:finder"],
+        ["xpath=//main[@id='main-content']/section/div[2]/div/div[6]/div/div/div/div/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac19a63-4a43-4a4c-8096-534ec47fc746",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tds-btn--large > span",
+      "targets": [
+        ["css=.tds-btn--large > span", "css:finder"],
+        ["xpath=//main[@id='main-content']/section/div[2]/div/div[8]/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vai al pagamento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec7bd8ec-b8c6-460a-b4f0-febf515f79cc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(100,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9016f587-0487-4a77-870d-fa0f6938b61a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.tds-text_color--10:nth-child(2)",
+      "targets": [],
+      "value": "€ 1.402 /mese"
+    }, {
+      "id": "a3e93a49-45f3-455a-b001-6dbbe2ce071a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "210eb3b9-cbd0-4a65-8e30-12923e86698e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["89dfede2-b39e-4386-a13e-9446942f163e"]
+  }],
+  "urls": ["https://www.google.it/"],
+  "plugins": []
+}
