@@ -1,0 +1,194 @@
+{
+  "id": "0d6afef9-224e-49f5-86ba-981d6f9e5425",
+  "version": "2.0",
+  "name": "seleniumGUI",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "c9796311-88c2-4c0d-ac70-137c1c01f285",
+    "name": "YouTube",
+    "commands": [{
+      "id": "8eff1f87-3f37-480f-ad71-8a53530c4fbf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e417ace-41a5-484b-8316-e087df166a9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "652x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af62002b-71a0-4f76-b114-33a6e759b48e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.topbar-icons",
+      "targets": [
+        ["css=.topbar-icons", "css:finder"],
+        ["xpath=(//button[@id='button']/yt-icon)[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/yt-icon-button/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ce9ccba-55e7-4634-be4d-b5b69de56418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.topbar-icons",
+      "targets": [
+        ["css=.topbar-icons", "css:finder"],
+        ["xpath=(//button[@id='button']/yt-icon)[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/yt-icon-button/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be59702-a90d-4518-9397-e79867c2a8d7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.topbar-icons",
+      "targets": [
+        ["css=.topbar-icons", "css:finder"],
+        ["xpath=(//button[@id='button']/yt-icon)[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/yt-icon-button/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccf984b2-d398-4bb9-98fd-89fd2bd0cd50",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "il mio tiro libero falessi davide"
+    }, {
+      "id": "63f4b1e2-acc2-4dd4-94da-7777ecb486cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//ytd-searchbox/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0fb84b1-c667-468d-9f16-c6773f467439",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//ytd-searchbox/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e92071d-1761-4673-a999-220aa40548b3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//ytd-searchbox/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fba2dcf-2efe-4300-b203-d18159a3fe56",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Il mio tiro libero",
+      "targets": [
+        ["linkText=Il mio tiro libero", "linkText"],
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=P-eYDaltU3s')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Il mio tiro libero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63429d7a-f985-4420-a16d-4478042598c3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Il mio tiro libero",
+      "targets": [
+        ["linkText=Il mio tiro libero", "linkText"],
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=P-eYDaltU3s')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Il mio tiro libero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25f10b1c-e723-4760-b472-002e7e8faadf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissible #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Il mio tiro libero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f073a506-d2e8-4316-a721-43a0b7173f9b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#actions-inner > #menu #flexible-item-buttons > .style-scope > .style-scope .yt-spec-touch-feedback-shape__fill",
+      "targets": [
+        ["css=#actions-inner > #menu #flexible-item-buttons > .style-scope > .style-scope .yt-spec-touch-feedback-shape__fill", "css:finder"],
+        ["xpath=//div[@id='flexible-item-buttons']/ytd-download-button-renderer/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]", "xpath:idRelative"],
+        ["xpath=//ytd-download-button-renderer/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a523b6d5-b3b0-443f-92d6-a77f57319e46",
+      "comment": "",
+      "command": "click",
+      "target": "id=expand",
+      "targets": [
+        ["id=expand", "id"],
+        ["css=#description-inline-expander > #expand", "css:finder"],
+        ["xpath=//tp-yt-paper-button[@id='expand']", "xpath:attributes"],
+        ["xpath=//ytd-text-inline-expander[@id='description-inline-expander']/tp-yt-paper-button", "xpath:idRelative"],
+        ["xpath=//ytd-text-inline-expander/tp-yt-paper-button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3236148d-8f01-4afc-a6eb-45874ecba543",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#info > .yt-formatted-string:nth-child(3)",
+      "targets": [],
+      "value": "22 dic 2015"
+    }, {
+      "id": "548d9c74-955e-403b-9b19-b00335fb88aa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e3d88ad4-dc99-4c15-8a23-e34e67774c66",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9796311-88c2-4c0d-ac70-137c1c01f285"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
