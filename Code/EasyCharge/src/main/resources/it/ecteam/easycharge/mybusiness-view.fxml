@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane fx:id="anchorPane" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.ecteam.easycharge.viewcontroller.MyBusinessViewController">
+    <BorderPane minHeight="720.0" minWidth="1080.0" prefHeight="668.0" prefWidth="993.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top><AnchorPane>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #66ABEA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                <items>
+                    <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/title.png" />
+                        </image>
+                    </ImageView>
+
+                    <HBox alignment="CENTER_LEFT">
+                        <children>
+                            <Button fx:id="homeBtn" mnemonicParsing="false" onMouseClicked="#onHomeClick" style="-fx-background-color: #66ABEA;" text="Home" textFill="WHITE">
+                                <HBox.margin>
+                                    <Insets right="10.0" />
+                                </HBox.margin>
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="routeBtn" alignment="CENTER" mnemonicParsing="false" style="-fx-background-color: #66ABEA;" text="My business" textFill="WHITE">
+                                <HBox.margin>
+                                    <Insets right="10.0" />
+                                </HBox.margin>
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Button>
+                        </children>
+                        <padding>
+                            <Insets right="10.0" />
+                        </padding>
+                    </HBox>
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <HBox alignment="CENTER_RIGHT">
+                        <children>
+                            <Label fx:id="userMainLabel" onMouseClicked="#onUserLabelClick" prefHeight="38.0" prefWidth="63.0" text="User" textFill="WHITE">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                </items>
+            </ToolBar>
+        </AnchorPane>
+        </top>
+        <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+                <children>
+                    <WebView fx:id="webMap" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                </children>
+            </AnchorPane>
+        </center>
+        <right>
+            <VBox prefHeight="670.0" prefWidth="280.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Label fx:id="bLabel" style="-fx-font-weight: BOLD;">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                        <padding>
+                            <Insets left="5.0" />
+                        </padding>
+                    </Label>
+                    <ListView fx:id="listView" onMouseClicked="#onItemSelected" prefHeight="521.0" prefWidth="265.0" />
+                    <HBox>
+                        <children>
+                            <Label fx:id="csLabel" style="-fx-font-weight: BOLD;">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                                <padding>
+                                    <Insets top="5.0" />
+                                </padding>
+                            </Label>
+                            <Pane prefHeight="35.0" prefWidth="36.0">
+                                <children>
+                                    <Button fx:id="favoriteOffBtn" mnemonicParsing="false" prefHeight="18.0" prefWidth="16.0" style="-fx-background-color: ffffff;" />
+                                    <Button fx:id="favoriteOnBtn" mnemonicParsing="false" prefHeight="18.0" prefWidth="16.0" style="-fx-background-color: ffffff;" />
+                                </children>
+                                <HBox.margin>
+                                    <Insets bottom="5.0" right="5.0" top="5.0" />
+                                </HBox.margin>
+                            </Pane>
+                        </children>
+                    </HBox>
+               <Label fx:id="pLabel" text="Thank you for your purchase, your business is advertised to this charging station's users." wrapText="true" />
+               <Button mnemonicParsing="false" onAction="#onRemoveClick" style="-fx-background-color: #66ABEA;" text="Cancel my ad" textFill="WHITE">
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin></Button>
+                </children>
+                <BorderPane.margin>
+                    <Insets />
+                </BorderPane.margin>
+            </VBox>
+        </right>
+    </BorderPane>
+</AnchorPane>
