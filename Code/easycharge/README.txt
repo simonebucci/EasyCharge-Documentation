@@ -1,1 +1,0 @@
-EasyCharge an ISPW project by Simone Bucci and Miriana Marchi
